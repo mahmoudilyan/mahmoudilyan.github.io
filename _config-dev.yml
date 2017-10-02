@@ -48,5 +48,4 @@ exclude:
 sass:
   sass_dir: assets
   style: compressed
-
-environment: production  
+environment: development
