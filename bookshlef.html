@@ -5,9 +5,9 @@ permalink: /bookshelf/
 weight: 4
 ---
   <ul class="bookshelf-list columns">
-    {% assign posts = site.categories.book-notes | sort:"status"  %}
+    {% assign posts = site.categories.book-notes | sort:"date"  %}
 
-     {% for post in posts %}
+     {% for post in posts reversed %}
     <li class="bookshelf-list__item column is-6">
       <div class="columns">
         <div class="column is-4">

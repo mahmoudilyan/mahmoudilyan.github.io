@@ -1,0 +1,9 @@
+---
+layout: book-note
+title:  "Understanding ECMAScript 6: The Definitive Guide for JavaScript Developers"
+date:   2017-9-30 01:41:36 +0300
+categories: book-notes
+image: https://images-na.ssl-images-amazon.com/images/I/51CTCtyHlsL._SX376_BO1,204,203,200_.jpg
+bookCategory: Programming, Javascript
+bookLink: https://www.amazon.com/Understanding-ECMAScript-Definitive-JavaScript-Developers/dp/1593277571/
+---

@@ -1,0 +1,11 @@
+---
+layout: book-note
+title:  "Mindset"
+date:   2017-1-30 01:41:36 +0300
+categories: book-notes
+image: https://images-na.ssl-images-amazon.com/images/I/51FexyX8WQL._SX322_BO1,204,203,200_.jpg
+bookCategory: Self-Helf, Self-Development, Psychology
+rating: 5
+bookLink: https://www.amazon.com/Mindset-Psychology-Carol-S-Dweck/dp/0345472322/
+---
+
