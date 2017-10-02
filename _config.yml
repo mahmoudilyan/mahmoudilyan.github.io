@@ -35,6 +35,7 @@ copyrights: >
           Built with love using <a href="https://jekyllrb.com" target="_blank">Jekyll</a> 
           , <a href="http://bulma.io/" target="_blank">Bulma</a> 
           and powered by <a href="https://github.com/mahmoudilyan/mahmoudilyan.github.io" target="_blank">Github</a>
+google_analytics: UA-107359695-1
 
 # Build settings
 markdown: kramdown
