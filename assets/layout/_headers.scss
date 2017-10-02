@@ -1,0 +1,44 @@
+.main-header{
+	height: 5rem;
+	background-color: #FFFFFF;
+	width: 100%;
+	//box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.15);
+	border-bottom: 1px solid $color-bg-light1;
+    margin-bottom: 0.25rem;
+
+
+	.nav-container{
+		text-align: right;
+
+		a{
+			color: $color-typography1;
+			padding-left: 1rem;
+			margin-left: 1rem;
+		}
+
+		a.active{
+			//text-decoration: underline;
+			color: $color-primary-base;
+		}
+	}
+
+	&--fixed{
+		position: absolute;
+		background-color: transparent;
+		left: 0;
+		top: 0;
+		box-shadow: none;
+		margin: 0;
+		border-bottom: 0;
+
+		.nav-container a{
+			color: #ffffff;
+		}
+	}	
+
+	&__content{
+		align-items: center;
+		height: 5rem;
+		margin-top: 0;
+	}
+}

@@ -1,44 +1,43 @@
-<footer class="site-footer">
+<footer class="main-footer {% if include.footer-extra-style != null %} {{include.footer-extra-style}} {% endif %}">
 
-  <div class="wrapper">
+  <div class="container">
 
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
 
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>
-            {% if site.author %}
-              {{ site.author | escape }}
-            {% else %}
-              {{ site.title | escape }}
-            {% endif %}
-            </li>
-            {% if site.email %}
-            <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {% endif %}
-        </ul>
+    <div class="columns main-footer__content">
+
+      <div class="column">
+        <p>{{ site.copyrights }}</p>
       </div>
 
-      <div class="footer-col footer-col-2">
+      <div class="column">
         <ul class="social-media-list">
-          {% if site.github_username %}
+          {% if site.twitter_url %}
           <li>
-            {% include icon-github.html username=site.github_username %}
+            <a href="{{site.twitter_url}}" target="_blank"> Twitter</a>
           </li>
-          {% endif %}
+          {% endif %}   
 
-          {% if site.twitter_username %}
+          {% if site.dribbble_url %}
           <li>
-            {% include icon-twitter.html username=site.twitter_username %}
+            <a href="{{site.dribbble_url}}" target="_blank"> Dribbble</a>
           </li>
-          {% endif %}
+          {% endif %}             
+
+          {% if site.linkedin_url %}
+          <li>
+            <a href="{{site.linkedin_url}}" target="_blank"> LinkedIn</a>
+          </li>
+          {% endif %}             
+
+          {% if site.github_url %}
+          <li>
+            <a href="{{site.github_url}}" target="_blank"> Github</a>
+          </li>
+          {% endif %}                  
         </ul>
       </div>
 
-      <div class="footer-col footer-col-3">
-        <p>{{ site.description | escape }}</p>
-      </div>
+
     </div>
 
   </div>

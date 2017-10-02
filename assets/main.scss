@@ -4,27 +4,27 @@
 @charset "utf-8";
 
 // Our variables
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
-$base-font-weight: 400;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
+// $base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+// $base-font-size:   16px;
+// $base-font-weight: 400;
+// $small-font-size:  $base-font-size * 0.875;
+// $base-line-height: 1.5;
 
-$spacing-unit:     30px;
+// $spacing-unit:     30px;
 
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+// $text-color:       #111;
+// $background-color: #fdfdfd;
+// $brand-color:      #2a7ae2;
 
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+// $grey-color:       #828282;
+// $grey-color-light: lighten($grey-color, 40%);
+// $grey-color-dark:  darken($grey-color, 25%);
 
-// Width of the content area
-$content-width:    800px;
+// // Width of the content area
+// $content-width:    800px;
 
-$on-palm:          600px;
-$on-laptop:        800px;
+// $on-palm:          600px;
+// $on-laptop:        800px;
 
 // Minima also includes a mixin for defining media queries.
 // Use media queries like this:
@@ -36,4 +36,63 @@ $on-laptop:        800px;
 // }
 
 // Import partials from the `minima` theme.
-@import "minima";
+//@import "minima";
+
+
+
+/**
+ * CONTENTS
+ *
+ * Vendors
+ *
+ *
+ * Utils
+ * 1. Mixins...............Useful mixins
+ * 2. Variables............Variable Files (Colors, Spacing)
+ *
+ * Base
+ * 1. Typography...........Typography Variables
+ * 2. Global...............Global Style, Headings, Paragraphs, Blockquotes, Gaps, Full Section
+ *
+ * Layout
+ * 1. Layouts..............Grid Layouts,5 Columns for Bootstrap
+ * 2. Headers..............All headers in the site
+ * 3. Footers..............All Footers in the site
+ * 4. Forms................All Forms in site
+ * 
+ * Components
+ * 1. Buttons..............All Buttons
+ * 2. Inputs...............Inputs
+ * 3. Alerts...............Alerts
+ *
+ *
+ */
+
+// Utils
+//  
+// Variables, Mixins,
+//
+@import "utils/_mixins.scss";
+@import "utils/_variables.scss";
+
+
+// Style
+// 
+// Global, Typography
+// 
+// Styleguide 2.0
+@import "base/_typography.scss";
+@import "base/_global.scss";
+
+
+
+@import "layout/_layouts.scss";
+@import "layout/_headers.scss";
+@import "layout/_footers.scss";
+@import "layout/_articles.scss";
+
+
+@import "components/lists";
+
+
+

@@ -1,25 +1,21 @@
 ---
-layout: default
+layout: default-home
 ---
+ <div class="container">
+   
+   <div class="columns home-main-section__container">
 
-<div class="home">
+     <div class="column is-3">
+       <img src="{{site.avatar}}" alt="">
+     </div>
 
-  <h1 class="page-heading">Introduction</h1>
-  
-  {{ content }}
+     <div class="column is-9">
+       <h1>{{site.introduction}}</h1>
+       <p>
+        {{site.about}}
+       </p>
+     </div>
 
-<!--   <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p> -->
-
-</div>
+   </div>
+ </div>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html header-extra-style="main-header--fixed" %}
+    
+    <section class="home-main-section">
+      
+         {{ content }}
+
+    </section>
+
+    {% include footer.html footer-extra-style="main-footer--fixed" %}
+  </body>
+
+</html>
+
+

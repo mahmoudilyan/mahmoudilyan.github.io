@@ -19,8 +19,22 @@ description: > # this means to ignore newlines until "baseurl:"
   Mahmoud Ilyan's Personal Site, Product's Case Studies, Book Notes & More
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: mahmoudilyan
-github_username:  mahmoudilyan
+introduction: HI THERE, I’M MAHMOUD ILYAN! 
+about: >
+  Product Designer & Front-End Developer who loves turning complex problems into a succesful products, 
+  always learning and always doing something new. See my <a href="/projects">Side projects </a> or my <a href="/case-studies">Work</a>
+  <br><br>
+  Worked for <br>
+  <img src="/assets/images/clients-list.png" title="clients">
+avatar: /assets/images/personal-pic.png 
+twitter_url: https://twitter.com/mahmoudIlyan
+github_url:  https://github.com/mahmoudilyan
+dribbble_url: https://dribbble.com/mahmoudilyan
+linkedin_url: https://www.linkedin.com/in/mahmoudilyan/
+copyrights: > 
+          Built with love using <a href="https://jekyllrb.com" target="_blank">Jekyll</a> 
+          , <a href="http://bulma.io/" target="_blank">Bulma</a> 
+          and powered by <a href="https://github.com/mahmoudilyan/mahmoudilyan.github.io" target="_blank">Github</a>
 
 # Build settings
 markdown: kramdown
@@ -29,3 +43,7 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
+
+sass:
+  sass_dir: assets
+  style: compressed

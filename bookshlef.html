@@ -4,3 +4,48 @@ title: Bookshelf
 permalink: /bookshelf/
 weight: 4
 ---
+  <ul class="bookshelf-list columns">
+    {% assign posts = site.categories.book-notes | sort:"status"  %}
+
+     {% for post in posts %}
+    <li class="bookshelf-list__item column is-6">
+      <div class="columns">
+        <div class="column is-4">
+          <a href="{{ post.bookLink }}" target="_blank">
+            <img src="{{ post.image }}" title="{{post.title}}"> 
+          </a>
+        </div>
+
+        <div class="column is-8">
+            <h2 class="bookshelf-list__item__title">
+                {% if post.status %}
+                    <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+                {% else %}
+                    {{ post.title }}
+                {% endif %}
+            </h2>
+            <div class="bookshelf-list__item__rating">
+                {% if post.rating %}
+                    {% case post.rating %}
+                        {% when 1 %}
+                            <img src="/assets/images/1-star.svg"/>
+                        {% when 2 %}
+                            <img src="/assets/images/2-stars.svg"/>
+                        {% when 3 %}
+                            <img src="/assets/images/3-stars.svg"/>
+                        {% when 4 %}
+                            <img src="/assets/images/4-stars.svg"/>
+                        {% when 5 %}
+                            <img src="/assets/images/5-stars.svg"/>
+                    {% endcase %}
+                {% else %}              
+                    <span>Currently Reading </span>
+                {% endif %}
+            </div>
+            <h6 class="bookshelf-list__item__category">Category</h6>
+            <p>{{ post.bookCategory }}</p>
+        </div>
+      </div>
+    </li>
+    {% endfor %}
+  </ul>

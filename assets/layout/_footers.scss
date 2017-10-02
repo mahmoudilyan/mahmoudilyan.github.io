@@ -1,0 +1,64 @@
+.main-footer{
+	height: 5rem;
+	//background-color: #FFFFFF;
+	width: 100%;
+	overflow: hidden;
+	border-top: 1px solid $color-bg-light1;
+
+	&__content{
+		align-items: center;
+		height: 5rem;
+		margin-top: 0;
+	}
+
+	.social-media-list{
+		list-style-type: none;
+		display: flex;
+		justify-content: flex-end;
+
+		li{
+			padding: 0 1rem;
+		}
+
+		li a{
+			color: $color-primary-base;
+			font-size: 0.85rem;
+		}
+	}
+
+	p{
+		color: $color-typography1;
+		margin-bottom: 0;
+	}
+
+	&--fixed{
+		position: absolute;
+		background-color: transparent;
+		left: 0;
+		bottom: 0;
+		border-top: 1px solid rgba(255,255,255,0.05);
+
+		.social-media-list{
+			list-style-type: none;
+			display: flex;
+			justify-content: flex-end;
+		}
+
+		.social-media-list li{
+				padding: 0 1rem;
+		}
+
+		.social-media-list li a{
+			color: #ffffff;
+			font-size: 0.85rem;
+		}
+
+		p{
+			color: #ffffff;
+			margin-bottom: 0;
+		}
+
+	}		
+
+
+}

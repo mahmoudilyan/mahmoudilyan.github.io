@@ -1,0 +1,186 @@
+section.section-list{
+	background-color: #ffffff;
+}
+
+header{
+	background-color: $color-bg-light1;
+
+	.navbar{
+		background: $color-bg-light1;
+		border: 0;
+		box-shadow: none;
+	}
+
+    .navbar-nav .nav-item{
+    	margin-left: 2rem;
+
+    	+ .nav-item{
+    		margin-left: 2rem;
+    	}
+    }
+
+	.navbar-nav .nav-item{
+		//margin-right: 2rem;
+
+	}
+
+
+
+    .nav.navbar-nav {
+    	li:first-child{
+    		display: none;
+    	}
+
+    	li a{
+    		color: $color-typography1;
+    	}
+    }	
+
+    .navbar-light .navbar-nav .nav-link{
+    	color: $color-typography2;
+
+    	&:hover{
+    		color: $color-typography1;
+    	}
+    }
+
+
+}
+
+// Header Buttons
+header .navbar .top-nav-btns .btn-secondary{
+	@extend .btn; 
+
+	&:hover:enabled, &:focus:enabled{
+	 	@include lineargradient(#FFFFFF,#F8F8F8);
+		color: $color-primary-base;
+		box-shadow: 0 0 4px rgba($color-bg-light2, 0.5);
+		outline: 0;
+		border: 1px solid $color-bg-light2;
+	}
+
+	&:active{
+		@include lineargradient(#f8f8f8, #ffffff);
+	}	
+
+}
+
+.feat{
+	color: $color-typography2;
+	font-weight: 300;
+
+	h4{
+		color: $color-typography1;
+		font-size: 1.25rem;
+		font-weight: 500;
+	}
+}
+
+header .navbar .top-nav-btns .btn-primary{
+	@extend .btn-primary;
+	margin-right: 0.5rem;
+
+    &:hover:enabled, &:focus:enabled{
+      background-color: darken($color-primary-base, 5%) ;
+      color: #ffffff;
+    }
+
+    &:active:enabled{
+      background-color: darken($color-primary-base, 15%) ;
+    }	
+}
+
+
+// Card Block
+.card {
+	box-shadow: 0 0 4px $color-bg-light2;
+	border: 0;
+
+	h2.card-title{
+		font-size: 1.5rem;
+		border-color: $color-bg-light1;
+		letter-spacing: 0.5px;
+		color: $color-typography1;
+	}
+
+	&.card-clients{
+		box-shadow: none;
+	}
+}
+.container + hr {
+	display: none;
+}
+.cta-small {
+
+	background-color: $color-bg-light3; 
+	padding: 2rem ;
+	margin: 2rem 0;
+
+	& + hr{
+		display: none;
+	}
+
+	p {
+		color: $color-typography2;
+		font-size: 1.25rem;
+	}
+}
+
+.card.well {
+    box-shadow: none;
+    background: $color-bg-light3;
+    //border: 1px solid $color-bg-light1;
+    padding: 1rem 0.5rem;
+
+	.narrow-testimonial em{
+		background-color: rgba($color-cta-base,0.3);
+	}
+
+	.testimonial{
+		padding-bottom: 0;
+	}
+	
+	.testimonial .blockquote-footer{
+		img{
+			border: 1px solid $color-bg-light1;
+		}
+
+		a span:first-child{
+			display: inline-block;
+			margin: 0.5rem 0 0.25rem 0;
+		}
+	}
+}
+
+// Footer
+footer#page-footer{
+	background-color: $color-bg-light3;
+	text-shadow: none;
+	box-shadow: none;
+	color: $color-typography2;
+
+	a{
+		color: $color-typography2;
+
+		&:hover{
+			color: $color-typography1;
+		}
+	}
+
+	h4 + hr{
+		display: none;
+	}
+
+	h4{
+		text-transform: uppercase;
+		font-size: 1rem;
+		font-weight: 500;
+		color: $color-typography3;
+		margin-bottom: 2rem;
+	}
+
+	span{
+		font-size: 0.75rem;
+		color: $color-typography3;
+	}
+}

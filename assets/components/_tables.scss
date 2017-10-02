@@ -1,0 +1,41 @@
+//  Tables
+//
+//  Tables
+//
+//  Markup: tables.hbs
+//
+// Styleguide 3.4
+
+table,.table-bordered{
+
+	border-color: $color-bg-light2;
+
+	thead{
+		border-color: $color-bg-light2;
+
+		th {
+			padding: 1rem;
+			border-color: $color-bg-light2;
+		}
+
+	}
+
+	tbody{
+
+		td{
+			border-color: $color-bg-light2;
+			border-bottom: 1px solid $color-bg-light1;
+			padding: 0.5rem;
+
+
+		}
+
+		tr:last-child td{
+			border-bottom: 1px solid $color-bg-light2;
+		}
+
+		tr:hover{
+			background-color: $color-bg-light1;
+		}
+	}
+}

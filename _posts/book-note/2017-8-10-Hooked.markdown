@@ -1,0 +1,10 @@
+---
+layout: book-note
+title:  "Hooked: How to Build Habit-Forming Products"
+date:   2017-10-1 01:41:36 +0300
+categories: book-notes
+image: https://images-na.ssl-images-amazon.com/images/I/41yYbULBScL._SX329_BO1,204,203,200_.jpg
+bookCategory: Psychology, Design
+rating: 5
+bookLink: https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788
+---

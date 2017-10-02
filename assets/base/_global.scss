@@ -1,0 +1,102 @@
+/* ------------------------------------------------------------ */ 
+/* Global Settings
+/* ------------------------------------------------------------ */
+
+body{
+  font-family: $font-nunito;
+  color: $color-typography1 ;
+  margin: 0;
+  font-size: $fontSize-p;
+  background-color: #ffffff;
+  @include antialiased-font();
+}
+  
+html,
+button,
+input,
+select,
+textarea {
+  @extend body;
+}
+
+section{
+  background-color: #ffffff;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: $font-dosis;
+}
+h1{
+    font-size: 1.5rem;
+    line-height: 1.6;
+    color: $color-typography1;
+    margin-bottom: 1.5rem;
+}
+h2{
+    font-size: 1.25rem;
+    line-height: 1.666666;
+    color: $color-typography1;
+    margin-bottom: 1.25;
+}
+h3{
+    font-size: 1.25rem;
+    line-height: 1.6666666;
+    color: $color-typography1;
+}
+
+p{
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+a{
+  color: $color-primary-base ;
+
+  &:hover, &:focus,&:active{
+    text-decoration: underline;
+    color: $color-primary-base ;
+  }
+}
+
+// Page title
+.page-title{
+    font-size: 2.25rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+
+    a{
+        font-size: 0.875rem;
+        vertical-align: middle;
+        font-weight: normal;
+
+        i{
+            margin-right: 0.25rem;
+        }
+    }
+}
+
+// /* ------------------------------------------------------------ */ 
+// /* Spacing Classes
+// /* ------------------------------------------------------------ */
+.gap{ 
+    clear: both;
+    display: block;
+    height: 1.5rem;
+
+    &.gap--l{
+	    height: 3.5rem;
+	}
+
+
+}
+
+.center-block{
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
+}

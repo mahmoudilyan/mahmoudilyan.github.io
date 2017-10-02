@@ -1,0 +1,63 @@
+.article{
+
+
+	&--case-study{
+			.article__image{
+				height: 20rem;
+				position: relative;
+				display: flex;
+				align-items: center;	
+				margin-top: 0;
+				justify-content: center;	
+				margin-top: -0.25rem;
+				flex-direction: column;
+			}
+
+			.article__title{
+				color: #ffffff;
+				z-index: 1;
+				font-size: 2.5rem;
+			}
+
+			.article__desc{
+				color: #ffffff;
+				z-index: 1;
+				font-size: 1.25rem;
+			}
+
+			.article__image img{
+				max-width: none;
+				height: 100%;
+				position: absolute;
+				left: 0;
+				top: 0;
+			}
+
+			.article__meta{
+				background-color: $color-bg-light1;	
+				height: 7.5rem;
+			}
+			.article__meta__container{
+				align-items: center;
+				height: 7.5rem;
+				margin-top: 0;
+			}	
+
+			.article__meta__container p{
+				margin: 0;
+			}
+
+			.article__meta__container h4{
+				text-transform: uppercase;
+				margin: 0;
+				line-height: 0.75rem;
+				margin-bottom: 0.75rem;
+				color: $color-typography2;
+			}
+
+	}
+
+
+
+
+}

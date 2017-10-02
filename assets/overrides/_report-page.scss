@@ -1,0 +1,99 @@
+header .navbar.navbar-bottom{
+	background: rgba($color-bg-light2,0.4) !important;
+    border-radius: 0;
+    text-shadow: none;
+    box-shadow: none;
+    border: 0;
+    font-family: $font-proxima;;
+    color: $color-typography1;	
+
+    a{
+    	color: $color-primary-base;
+    }
+}
+
+.question.card, .question.hero-box{
+	background: $color-primary-second !important;
+	//border: 2px solid rgba($color-cta-base, 0.1);
+	border: 0;
+	//background: #ffffff !important;
+	box-shadow: none;
+	border-radius: 2px;
+
+	h1{
+		margin-bottom: 0;
+		color: #ffffff;
+		margin-top: 0.5rem;
+	}
+
+	.question-label{
+		background: rgba($color-cta-base, 0.1);
+		color: $color-cta-base;
+		position: absolute;
+		left: 0;
+		top: 0;
+		padding: 0 1rem;
+		font-size: 0.75rem;
+		border-radius: 2px;
+		font-weight: bold;
+	}
+}
+
+.pr-header{
+	
+	.well-small{
+		background: $color-bg-light1;
+		color: $color-typography1;
+		border: 0;
+		padding: 0.25rem;
+	}
+
+	.well-small.alert-danger{
+		//background: $color-bg-light3;
+		border-color: $color-bg-light1;
+		border: 0;
+		//padding: 0.25rem;
+		//color: $color-notification-danger;
+
+		i, span{
+			color: $color-notification-danger;
+		}
+	}
+}
+
+[data-outcome-label='winner']{
+	background: #ffffff !important; 
+	border: 1px solid $color-notification-success; 
+	box-shadow: 0 0 4px $color-notification-success;
+
+	&:after{
+		content: '\f00c';
+		font-family: "FontAwesome";
+		color: #ffffff;
+		font-size: 2rem;
+		text-align: center;
+		line-height: 4rem;
+		width: 4rem;
+		height: 4rem;
+		border-radius: 50%;
+		background: $color-notification-success;
+		position: absolute;
+		right: 0;
+		top: 0;
+		margin-top: -2rem;
+		margin-right: -1rem;
+	}
+}
+
+.answers + .card.card-block{
+	padding: 0;
+	box-shadow: none;
+	border: 0;
+	margin-top: 1.25rem;
+
+	.card-title{
+		margin-bottom: 1.25rem;
+	}
+
+
+}

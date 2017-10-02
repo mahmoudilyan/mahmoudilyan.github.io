@@ -4,3 +4,39 @@ title: Case Studies
 permalink: /case-studies/
 weight: 2
 ---
+
+
+  <ul class="case-studies-list">
+    {% assign posts = site.categories.case-studies | sort:"weight"  %}
+
+    {% for post in posts %}
+    <li class="case-studies-list__item columns">
+		
+	   <div class="column is-5">
+          <img src="{{ post.frontImage }}" title="{{post.title}}"> 
+        </div>
+
+        <div class="column is-7">
+            <h2 class="case-studies-list__item__title">
+                {% if post.status %}
+                    <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+                {% else %}
+                    {{ post.title }}
+                {% endif %}
+
+            </h2>
+
+            <p class="case-studies-list__item__excerpt">
+              {{ post.excerpt }}        	
+            </p>
+            {% if post.status %}
+                <a href="{{ post.url | relative_url }}" class="case-studies-list__item__link">See Case Study</a>
+            {% else %}
+                <span> Coming Soon </span>
+            {% endif %}
+
+
+        </div>
+    </li>
+    {% endfor %}
+  </ul>

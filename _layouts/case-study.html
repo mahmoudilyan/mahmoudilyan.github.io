@@ -1,0 +1,46 @@
+---
+layout: default
+---
+<article class="article article--case-study" itemscope itemtype="http://schema.org/BlogPosting">
+
+  	<header class="article__image">
+    	<h1 class="article__title" itemprop="name headline">{{ page.title | escape }}</h1>
+    	<p class="article__desc">{{ page.desc }}</p>
+    	<img src="{{ page.image }}" alt="{{ post.title | escape }}">
+  	</header>
+
+  	<section class="article__meta">
+  		<div class="container">
+  			<div class="columns article__meta__container">
+  				
+				<div class="column is-2">
+					<img src="/assets/images/vbout-logo.png" alt="">
+				</div>
+				<div class="column is-2">
+					<h4>Project Details</h4>
+					<p>Vbout Comppany<br>
+					2016</p>
+				</div>
+				<div class="column is-5">
+					<h4>Main Responsibilities</h4>
+					<p>Wireframing, User Research, Visual Design, Prototyping, 
+						Features Priotization, Analytics & Front End Monitoring    
+					</p>
+				</div>
+				<div class="column is-2">
+					<h4>Sector</h4>
+					<p>Digital Marketing & Social
+						Media</p>
+				</div>
+
+  			</div>
+  		</div>
+  	</section>
+
+
+  	<section class="article__content" itemprop="articleBody">
+	    	{{ content }}
+
+	</section>
+
+</article>

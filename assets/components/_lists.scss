@@ -1,0 +1,48 @@
+.case-studies-list{
+	
+
+	&__item{
+		justify-items: center;
+		align-items: center;
+
+		&__title{
+			font-size: 1.25rem;
+			margin-bottom: 1rem;
+		}
+
+		&__excerpt{
+			font-size: 1.25rem;
+		}
+
+		&__link{
+
+		}
+
+
+	}
+}
+
+.bookshelf-list{
+	display: flex;
+	flex-wrap: wrap;
+	&__item{
+		display: flex;
+
+		&__title{
+			font-size: 1.25rem;
+		}
+
+		&__rating{
+			margin-bottom: 2rem;
+		}
+
+		&__category{
+		}
+	}
+
+	.columns{
+		align-items: center;
+	}
+
+
+}

@@ -1,0 +1,33 @@
+.home-main-section{
+	background-color: #082638;
+	height: 100vh;	
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+	color: #ffffff;
+
+	h1{
+		font-size: 1.25rem;
+		font-weight: bold;
+		color: #ffffff;
+		text-transform: uppercase;
+		letter-spacing: 1.1px;
+	}
+
+	.home-main-section__container{
+		align-items: center;
+		height: calc(100vh - 10rem);
+	}
+
+	p{
+		font-size: 1.75rem;
+		line-height: 3.5rem;
+	}
+
+}
+
+.page-container{
+	margin-top: 0;
+	justify-content: center;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
