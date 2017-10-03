@@ -4,3 +4,31 @@ title: Projects
 permalink: /projects/
 weight: 3
 ---
+<h6>I'm always trying to build something in my free time, List of side projects that I've worked on</h6>
+<br>
+<br>
+ <ul class="case-studies-list">
+    {% assign posts = site.categories.projects | sort:"date"  %}
+
+    {% for post in posts reversed %}
+    <li class="case-studies-list__item columns">
+		
+	   <div class="column is-2">
+          <img src="{{ post.image }}" title="{{post.title}}"> 
+        </div>
+
+        <div class="column is-8">
+            <h2 class="case-studies-list__item__title">
+                    <a class="post-link" href="{{ post.externalLink }}" target="_blank">{{ post.title | escape }}</a>
+                    {{ post.status }}
+            </h2>
+
+            <p class="case-studies-list__item__excerpt">
+              {{ post.excerpt }}        	
+            </p>
+
+
+        </div>
+    </li>
+    {% endfor %}
+  </ul>

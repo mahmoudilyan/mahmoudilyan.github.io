@@ -6,6 +6,6 @@ date:   2017-10-1 01:41:36 +0300
 categories: case-studies
 image: /assets/images/nabbesh-case-study-image@2x.jpg
 frontImage: /assets/images/nabbesh-case-cover@2x.png
-excerpt: Vbout is a digital marketing platform that optimize users’ customers journey for Digital Marketers. It is an all in one dashboard with easy integration system
+excerpt: Nabbesh.com is the Arab world’s largest freelance marketplace, giving you access to 100k+ talented individuals. Their diverse network delivers great work for top companies and entrepreneurs.
 weight: 2
 ---

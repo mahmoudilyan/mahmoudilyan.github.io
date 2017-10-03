@@ -1,0 +1,11 @@
+---
+layout: default
+title:  "Taleb - Co-Founder"
+date:   2017-9-5 01:41:36 +0300
+categories: projects
+image: /assets/images/project-taleb@2x.png
+excerpt: Taleb is a new and unique portal for Palestinian students and fresh graduates who are ready to enter the labour market and are looking for new jobs, internships, scholarships and training opportunities.
+weight: 2
+status: <span class="tag is-warning">Temporary Shut Down</span>
+externalLink: http://www.taleb.ps
+---
