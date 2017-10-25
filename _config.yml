@@ -21,7 +21,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 introduction: HI THERE, I’M MAHMOUD ILYAN! 
 about: >
-  Product Designer & Front-End Developer who loves turning complex problems into a succesful products, 
+  Product Designer & Front-End Developer who loves turning complex problems into successful products, 
   always learning and always doing something new. See my <a href="/projects">Side projects </a> or my <a href="/case-studies">Work</a>
   <br><br>
   Worked for <br>
