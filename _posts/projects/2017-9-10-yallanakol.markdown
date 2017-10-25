@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "YallaNakol - Founder"
+title:  "YallaNakol - Co-Founder"
 date:   2017-9-5 01:41:36 +0300
 categories: projects
 image: /assets/images/project-yallanakol@2x.png
